@@ -1,5 +1,7 @@
 # Classificação de Espécies de Aves
 
+Este repositório conta com códigos que desenvolvem um modelo de classificação de espécies de aves com base em imagens. A motivação para o uso de RNAs para essa tarefa é devido sua grande capacidade em lidar com dados complexos, como imagens, e aprender padrões relevantes para a classificação. O objetivo é ser capaz de identificar corretamente e com alta precisão as espécies de aves com base em uma imagem, podendo ser utilizada, por exemplo, para identificar espécies de aves ameaçadas.
+
 
 ## Exemplos de Imagens do Conjunto de Dados
 
@@ -43,11 +45,35 @@ A variável numSpecies é responsável por definir quantas espécies das 525 ser
 
 ### inf721_dataset.py
 
+Define o conjunto de dados estendendo a classe Dataset e DataLoader do Pytorch.
+
 ### inf721_model.py
+
+Define o modelo neural estendeno a classe Module do Pytorch. Foi implementado uma arquitetura de uma CNN.
 
 ### inf721_train.py
 
+Executa o procedimento de treinamento e validação. Salva os pesos do modelo em 'trained_model.pth'. Exibe um gráfico com as curvas da loss do treinamento e da validação.
+
 ### inf721_inference.py
+
+Carrega o modelo salvo, exibe a loss do teste e uma matriz de confusão.
+
+
+## Execução
+
+Após fazer o download do conjunto de dados e dos códigos desse repositório, certifique-se de que eles estão no mesmo diretório.
+
+Definir em inf721_cleaning.py quantas espécies deseja usar, modificando apenas o número da váriavel numSpecies.
+
+Executar o código de treinamento e depois o de inferência.
+
+```
+python3 inf721_train.py
+```
+```
+python3 inf721_inference.py
+```
 
 
 ## Exemplo de Resultados
