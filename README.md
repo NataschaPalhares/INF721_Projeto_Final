@@ -24,7 +24,7 @@ pip install scikit-learn
 
 https://www.kaggle.com/datasets/gpiosenka/100-bird-species/data
 
-O dataset possui 89885 imagens de 525 espécies de aves
+O dataset possui 89885 imagens de 525 espécies de aves e um arquivo csv.
 
 Treinamento ≈ 94%   
 
@@ -35,6 +35,19 @@ Teste ≈ 3% (5 imagens para cada espécie)
 
 ## Códigos
 
+### inf721_cleaning.py
+
+Corrige alguns erros e ajeita o arquivo csv disponibilizado junto com o conjunto de dados.
+
+A variável numSpecies é responsável por definir quantas espécies das 525 serão utilizadas (lembrando que a contagem começa do zero, logo, numSpecies = 11, significa que estão sendo utilizadas 12 espécies).
+
+### inf721_dataset.py
+
+### inf721_model.py
+
+### inf721_train.py
+
+### inf721_inference.py
 
 
 ## Exemplo de Resultados
@@ -43,6 +56,7 @@ Teste ≈ 3% (5 imagens para cada espécie)
 
 
 Average Test Loss = 0.15743689984083176
+
 Accuracy = 95%
 
 ![95](https://github.com/NataschaPalhares/INF721_Projeto_Final/assets/88913342/15bf750b-7182-42a6-8f8f-0a1d0291f225)
@@ -51,15 +65,21 @@ Accuracy = 95%
 
 ### Utilizando 20 Espécies
 
-Average Test Loss = 
-Accuracy =
+Average Test Loss = 0.3744361959397793
+
+Accuracy = 89%
+
+![89](https://github.com/NataschaPalhares/INF721_Projeto_Final/assets/88913342/d140f715-3d84-4b90-a5b2-613c876d0142)
+![20](https://github.com/NataschaPalhares/INF721_Projeto_Final/assets/88913342/8d334f7c-2a4b-40dc-9a9c-726206a13041)
+
 
 ### Utilizando 40 Espécies
 
 Average Test Loss = 0.6449991890362331
+
 Accuracy = 84,5%
 
 ![85](https://github.com/NataschaPalhares/INF721_Projeto_Final/assets/88913342/5f745724-a6c5-4313-bfe8-ee06ed696355)
-![Captura de tela 2023-12-04 094214](https://github.com/NataschaPalhares/INF721_Projeto_Final/assets/88913342/da10b956-7b43-43c4-9835-ba4c989c3276)
+![Captura de tela 2023-12-04 094214](https://github.com/NataschaPalhares/INF721_Projeto_Final/assets/88913342/e8549496-9c8d-4af5-97f2-d92758d6c769)
 
 
