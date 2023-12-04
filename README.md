@@ -21,3 +21,7 @@ pip install torchvision
 pip install scikit-learn
 ```
 
+## Conjunto de Dados
+
+https://www.kaggle.com/datasets/gpiosenka/100-bird-species/data
+
