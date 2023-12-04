@@ -22,7 +22,7 @@ class BirdDataset(Dataset):
 
     def __getitem__(self, idx):
 
-        img_path = format(self.dataframe.iloc[idx, 1])
+        img_path = self.dataframe.iloc[idx, 1]
         image = Image.open(img_path).convert("RGB")
 
         label = torch.LongTensor([self.dataframe.iloc[idx, 0]]).squeeze()
