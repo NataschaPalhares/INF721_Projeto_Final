@@ -20,7 +20,7 @@ def cleaning():
     df = df.drop('labels', axis=1)
 
     ###  No WINDOWS o path usa \ ao em vez de /
-    df['filepaths'] = df['filepaths'].str.replace('/', '\\')   ### Comentar esta linha caso NAO use WINDOWS
+    ## df['filepaths'] = df['filepaths'].str.replace('/', '\\')   ### Desomentar esta linha caso voce use WINDOWS
 
     df_train = df[df['data set'] == 'train']
     df_train = df_train.drop('data set', axis=1)
