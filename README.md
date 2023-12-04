@@ -25,3 +25,20 @@ pip install scikit-learn
 
 https://www.kaggle.com/datasets/gpiosenka/100-bird-species/data
 
+89885 imagens de 525 espécies
+
+Treinamento ≈ 94%   
+Validação ≈ 3%  (5 imagens para cada espécie)
+Teste ≈ 3% (5 imagens para cada espécie)
+
+
+## Resultados
+
+
+## Reproduzindo Resultados
+
+
+## Códigos
+
+
+
