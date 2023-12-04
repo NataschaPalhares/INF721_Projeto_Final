@@ -36,10 +36,10 @@ def cleaning():
     df_valid['filepaths'] = df_valid['filepaths'].str.replace('PARAKETT  AKULET', 'PARAKETT AUKLET')
     df_valid = df_valid.reset_index(drop=True)
 
-    numBirds = 19
-    df_train = df_train[df_train['class id'].between(0, 0 + numBirds)]
-    df_valid = df_valid[df_valid['class id'].between(0, 0 + numBirds)]
-    df_test = df_test[df_test['class id'].between(0, 0 + numBirds)]
+    numSpecies = 11
+    df_train = df_train[df_train['class id'].between(0, 0 + numSpecies)]
+    df_valid = df_valid[df_valid['class id'].between(0, 0 + numSpecies)]
+    df_test = df_test[df_test['class id'].between(0, 0 + numSpecies)]
 
 
     return df_train, df_valid, df_test
