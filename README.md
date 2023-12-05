@@ -41,6 +41,11 @@ Teste ≈ 3% (5 imagens para cada espécie)
 
 Corrige alguns erros e ajeita o arquivo csv disponibilizado junto com o conjunto de dados.
 
+Caso esteja utilizando Windows, descomente a linha com o código abaixo. Ele modifica o formato do caminho dos arquivos para ficar compativel com sistemas operacionais Windows.
+```
+df['filepaths'] = df['filepaths'].str.replace('/', '\\')
+```
+
 A variável numSpecies é responsável por definir quantas espécies das 525 serão utilizadas (lembrando que a contagem começa do zero, logo, numSpecies = 11, significa que estão sendo utilizadas 12 espécies).
 
 ### inf721_dataset.py
